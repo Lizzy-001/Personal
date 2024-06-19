@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Lato-Black;
+    src: url(Image/Lato-Black.ttf);
+}
+body{
+    color: white;
+    font-family: Lato-Black;
+    background-color: #31044A;
+}
+span{
+    color: yellow;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;    
+    background-color: #31044A;
+
+}
+header img{
+    width: 3rem;
+    border-radius: 50%;
+}
+ header ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+header ul a{
+    color: white;
+    text-decoration: none;
+}
+.Languages{
+    gap: 1.5rem;
+    display: flex;
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem; 
+    padding-bottom: 0;  
+    background-color: #31044A;
+
+}
+.IntroA {
+    margin-top: 2rem;
+    gap: 2rem;
+    display: flex;
+    }
+.IntroA a:nth-child(1){
+    padding: 14px 30px;
+    background-color: yellow;
+    color: #31044A;
+    border-radius: 15px;
+    border: 1px solid ;
+    text-decoration: none;
+    border-radius: 1.9rem;
+}
+.IntroA a:nth-child(2){
+    padding: 14px 30px;
+    background-color: transparent;
+    color: yellow;
+    border-radius: 1.9rem;
+    border: 0.13rem solid  yellow;
+    text-decoration: none;
+}
+.Picture img{
+    width: 15rem;
+}
+#About{
+    display: flex;    
+    background-color: rebeccapurple;
+    align-items: center;
+    justify-content: space-between;
+}
+#About .Intro{
+    width: 50%;
+    padding-left: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+#About .Picture img{
+    width: 100%;
+}
+#Service{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.serv{
+    background-color: rebeccapurple;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+}
+.serv img{
+    width: 100%;
+}
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+}
+.IMG{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.img img{
+    width: 3rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:767px){
+    header ul{
+        display: none;
+    }
+    #hero{
+        flex-direction: column;
+    }
+    #About{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+    #About .Intro{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        text-align: left;
+    
+    }
+    #About h1{
+        text-align: center;
+    }
+    #Service{
+        flex-direction:column;
+    
+    }
+    .IMG{
+        gap: 10px;
+    }
+}
